@@ -6,7 +6,6 @@ This project demonstrates how to use Docker and Docker Compose to containerize a
 Steps to run or start the application:
 1. Clone the Repository (DockerFile is located in the root of the application)
 2. Build the Docker image:
-   docker build -t spring-boot-app .
    docker-compose up --build
    (This command builds the Docker image and starts the application and database services.)
 3. Application should run on port http://localhost:8080
@@ -14,6 +13,6 @@ Steps to run or start the application:
 5. To stop the containers: docker-compose down
 6. Remove stopped containers and volumes: docker-compose rm -v
 7. Push Docker Image to a Registry Tag the Docker image : docker tag spring-boot-app chandreyees20/docker-assignment:latest
-8. Push the Docker image to Docker Hub: docker push your-dockerhub-username/spring-boot-app
+8. Push the Docker image to Docker Hub: docker push chandreyees20/docker-assignment:latest
 9. Pull Docker Image from a Registry Pull the Docker image from Docker Hub: docker pull chandreyees20/docker-assignment:latest
 10. Run the Docker image locally: docker run -d -p 8080:8080 chandreyees20/docker-assignment:latest
