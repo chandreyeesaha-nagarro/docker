@@ -13,7 +13,7 @@ Steps to run or start the application:
 4. To see the running list containers: docker ps
 5. To stop the containers: docker-compose down
 6. Remove stopped containers and volumes: docker-compose rm -v
-7. Push Docker Image to a Registry Tag the Docker image : docker tag spring-boot-app your-dockerhub-username/spring-boot-app
+7. Push Docker Image to a Registry Tag the Docker image : docker tag spring-boot-app chandreyees20/docker-assignment:latest
 8. Push the Docker image to Docker Hub: docker push your-dockerhub-username/spring-boot-app
-9. Pull Docker Image from a Registry Pull the Docker image from Docker Hub: docker pull your-dockerhub-username/spring-boot-app
-10. Run the Docker image locally: docker run -d -p 8080:8080 username/spring-boot-app
+9. Pull Docker Image from a Registry Pull the Docker image from Docker Hub: docker pull chandreyees20/docker-assignment:latest
+10. Run the Docker image locally: docker run -d -p 8080:8080 chandreyees20/docker-assignment:latest
